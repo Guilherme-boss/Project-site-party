@@ -31,23 +31,11 @@
   max-width: 100%;
 }
 
-.menuToggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 15px;
-  left: 20px; 
-}
-
 .desktopNav {
   display: flex;
 }
 
-.navList {
+.desktopNav .navList {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -55,7 +43,7 @@
   padding: 0;
 }
 
-.navList li a {
+.desktopNav .navList li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -65,11 +53,11 @@
   transition: color 0.3s ease;
 }
 
-.navList li a.active {
+.desktopNav .navList li a.active {
   color: gold;
 }
 
-.navList li a.active::after {
+.desktopNav .navList li a.active::after {
   content: "";
   display: block;
   width: 100%;
@@ -79,6 +67,29 @@
   bottom: -2px;
   left: 0;
   transition: width 0.3s ease-in-out;
+}
+
+.menuToggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+  z-index: 1100;
+}
+
+.icon {
+  font-size: 32px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuToggle:hover .icon {
+  color: gold;
 }
 
 .mobileNav {
@@ -99,6 +110,7 @@
 
 .mobileNav.open {
   left: 0;
+  display: flex;
 }
 
 .mobileNav .navList {
