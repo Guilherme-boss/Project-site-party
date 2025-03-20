@@ -9,10 +9,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <NavLink to="/" className={styles.logoContainer}>
-                    <img src={logo} alt="Logo" className={styles.logo} />
-                </NavLink>
-
+                {/* Botão Menu Hamburguer no canto esquerdo */}
                 <button 
                     className={styles.menuToggle} 
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -20,6 +17,12 @@ export default function Header() {
                     ☰
                 </button>
 
+                {/* Logo centralizada */}
+                <NavLink to="/" className={styles.logoContainer}>
+                    <img src={logo} alt="Logo" className={styles.logo} />
+                </NavLink>
+
+                {/* Menu de navegação LATERAL */}
                 <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
                     <ul className={styles.navList}>
                         <li>

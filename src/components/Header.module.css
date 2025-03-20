@@ -47,32 +47,57 @@
   left: 20px; /* 🔹 Agora está no canto superior esquerdo */
 }
 
-/* ======= NAVEGAÇÃO ======= */
+/* ======= MENU LATERAL ======= */
 .nav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* 🔹 Começa fora da tela */
+  width: 250px;
+  height: 100vh;
+  background-color: black;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease-in-out;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* 🔹 Quando o menu está aberto */
+.nav.open {
+  left: 0;
+}
+
+/* Lista do menu */
 .navList {
   list-style: none;
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
   padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.navList li {
+  width: 100%;
 }
 
 .navList li a {
+  display: block;
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  padding-bottom: 5px;
-  position: relative;
-  transition: color 0.3s ease;
+  padding: 15px 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.navList li a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Linha abaixo do menu ativo */
 .navList li a.active {
   color: gold;
+  position: relative;
 }
 
 .navList li a.active::after {
@@ -82,9 +107,8 @@
   height: 3px;
   background-color: gold;
   position: absolute;
-  bottom: -2px;
+  bottom: 0;
   left: 0;
-  transition: width 0.3s ease-in-out;
 }
 
 /* ======= RESPONSIVIDADE ======= */
@@ -94,9 +118,6 @@
   }
   .logo {
       height: 70px;
-  }
-  .navList {
-      gap: 20px;
   }
 }
 
@@ -116,23 +137,9 @@
       display: block;
   }
 
-  /* Menu some por padrão e aparece ao clicar */
+  /* O menu lateral se adapta ao tamanho */
   .nav {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-  }
-
-  .nav.open {
-      display: flex;
-  }
-
-  .navList {
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      margin-left: 0;
+      width: 220px;
   }
 
   .logo {
@@ -148,10 +155,9 @@
   .logo {
       height: 50px;
   }
-  .navList {
-      gap: 8px;
-  }
-  .navList li a {
-      font-size: 14px;
+
+  /* Reduz o tamanho do menu lateral */
+  .nav {
+      width: 200px;
   }
 }
