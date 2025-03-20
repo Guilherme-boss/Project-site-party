@@ -13,7 +13,6 @@ export default function Header() {
                     <img src={logo} alt="Logo" className={styles.logo} />
                 </NavLink>
 
-                {/* Botão do menu hamburguer para dispositivos móveis */}
                 <button 
                     className={styles.menuToggle} 
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -21,7 +20,6 @@ export default function Header() {
                     ☰
                 </button>
 
-                {/* Menu de navegação */}
                 <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
                     <ul className={styles.navList}>
                         <li>

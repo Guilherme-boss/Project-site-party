@@ -25,12 +25,26 @@
   height: auto;
   margin: 0 auto;
   padding: 10px 20px;
+  position: relative;
 }
 
 /* ======= LOGO ======= */
 .logo {
   height: 80px;
   max-width: 100%;
+}
+
+/* ======= MENU TOGGLE (BOTÃO HAMBURGUER) ======= */
+.menuToggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 20px; /* 🔹 Agora está no canto superior esquerdo */
 }
 
 /* ======= NAVEGAÇÃO ======= */
@@ -73,16 +87,6 @@
   transition: width 0.3s ease-in-out;
 }
 
-/* ======= MENU RESPONSIVO ======= */
-.menuToggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
 /* ======= RESPONSIVIDADE ======= */
 @media (max-width: 1024px) {
   .container {
@@ -107,7 +111,7 @@
       align-items: center;
   }
 
-  /* Botão do menu hamburguer aparece */
+  /* Exibir menu toggle */
   .menuToggle {
       display: block;
   }
