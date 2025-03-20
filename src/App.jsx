@@ -4,6 +4,7 @@ import Services from "./pages/Services.jsx";
 import Header from "./components/Header";
 import Contato from "./pages/Contato";
 import Rodape from "./components/Rodape";
+import NotFound from "./pages/NotFound.jsx";
 export default function App() {
     return (
         <Router>
@@ -13,6 +14,7 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/servicos" element={<Services />} />
                 <Route path="/contato" element={<Contato />} /> 
+                <Route path="*" element={<NotFound />} /> 
             </Routes>
             </main>
             <Rodape />

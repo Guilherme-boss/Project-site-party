@@ -1,6 +1,6 @@
 import styles from './Content.module.css';
-import capa from '/assets/capa.png';
-import corpo from '/assets/corpo.png';
+import capa from '/capa.png';
+import corpo from '/corpo.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -29,28 +29,27 @@ export default function Content() {
                     modules={[Autoplay, Pagination]}
                     spaceBetween={10}
                     slidesPerView={1}
-                    loop={true}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                 >
                     <SwiperSlide>
                         <div className={styles.slideContainer}>
-                            <img src="/assets/1.png" alt="Decoração Temática" className={styles.carouselImage} />
+                            <img src="/1.png" alt="Decoração Temática" className={styles.carouselImage} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={styles.slideContainer}>
-                            <img src="/assets/2.png" alt="Buffet Infantil" className={styles.carouselImage} />
+                            <img src="/2.png" alt="Buffet Infantil" className={styles.carouselImage} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={styles.slideContainer}>
-                            <img src="/assets/3.png" alt="Equipe Especializada" className={styles.carouselImage} />
+                            <img src="/3.png" alt="Equipe Especializada" className={styles.carouselImage} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={styles.slideContainer}>
-                            <img src="/assets/4.png" alt="Muita Diversão" className={styles.carouselImage} />
+                            <img src="/4.png" alt="Muita Diversão" className={styles.carouselImage} />
                         </div>
                     </SwiperSlide>
                 </Swiper>
