@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                {/* Botão Menu Hamburguer no canto esquerdo */}
+                {/* Botão Menu Hamburguer - Somente para celular */}
                 <button 
                     className={styles.menuToggle} 
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -22,8 +22,8 @@ export default function Header() {
                     <img src={logo} alt="Logo" className={styles.logo} />
                 </NavLink>
 
-                {/* Menu de navegação LATERAL */}
-                <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+                {/* MENU DESKTOP - Fixo para telas grandes */}
+                <nav className={styles.desktopNav}>
                     <ul className={styles.navList}>
                         <li>
                             <NavLink to="/" className={({ isActive }) => isActive ? styles.active : ""}>
@@ -37,6 +37,27 @@ export default function Header() {
                         </li>
                         <li>
                             <NavLink to="/contato" className={({ isActive }) => isActive ? styles.active : ""}>
+                                Contact
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+
+                {/* MENU MOBILE - LATERAL */}
+                <nav className={`${styles.mobileNav} ${menuOpen ? styles.open : ""}`}>
+                    <ul className={styles.navList}>
+                        <li>
+                            <NavLink to="/" className={({ isActive }) => isActive ? styles.active : ""} onClick={() => setMenuOpen(false)}>
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/servicos" className={({ isActive }) => isActive ? styles.active : ""} onClick={() => setMenuOpen(false)}>
+                                Services
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contato" className={({ isActive }) => isActive ? styles.active : ""} onClick={() => setMenuOpen(false)}>
                                 Contact
                             </NavLink>
                         </li>
