@@ -1,3 +1,4 @@
+/* ======= NOT FOUND (NotFound.module.css) ======= */
 .container {
     display: flex;
     flex-direction: column;
@@ -7,15 +8,16 @@
     text-align: center;
     background-color: black;
     color: white;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: clamp(40px, 10vw, 80px);
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     margin-bottom: 20px;
 }
 
@@ -32,4 +34,48 @@ p {
 
 .homeButton:hover {
     background-color: darkgoldenrod;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 1024px) {
+    .container {
+        height: auto;
+        min-height: 100vh;
+    }
+    h1 {
+        font-size: clamp(35px, 8vw, 70px);
+    }
+    p {
+        font-size: clamp(12px, 1.8vw, 18px);
+    }
+    .homeButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: clamp(30px, 7vw, 60px);
+    }
+    p {
+        font-size: clamp(12px, 1.6vw, 16px);
+    }
+    .homeButton {
+        font-size: 13px;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: clamp(25px, 6vw, 50px);
+    }
+    p {
+        font-size: clamp(10px, 1.5vw, 14px);
+    }
+    .homeButton {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }

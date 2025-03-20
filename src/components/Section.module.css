@@ -1,4 +1,4 @@
-/* Seção Principal Responsiva */
+/* ======= SECTION (Section.module.css) ======= */
 .section {
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     text-align: left;
     transition: transform 0.3s ease-in-out;
@@ -25,14 +25,14 @@
 }
 
 .text h2 {
-    font-size: 24px;
+    font-size: clamp(20px, 4vw, 28px);
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
 }
 
 .text p {
-    font-size: 16px;
+    font-size: clamp(14px, 2.5vw, 18px);
     line-height: 1.6;
     color: #555;
 }
@@ -68,6 +68,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
+/* ======= RESPONSIVIDADE ======= */
 @media (max-width: 1024px) {
     .section {
         flex-direction: column;
@@ -107,11 +108,14 @@
 }
 
 @media (max-width: 480px) {
+    .section {
+        padding: 15px;
+    }
     .text h2 {
-        font-size: 20px;
+        font-size: clamp(18px, 3.5vw, 24px);
     }
     .text p {
-        font-size: 14px;
+        font-size: clamp(12px, 2vw, 16px);
     }
     .image {
         max-width: 220px;

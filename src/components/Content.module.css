@@ -10,11 +10,6 @@
     max-width: 100vw;
 }
 
-.hero {
-    width: 100%;
-    max-width: 80%;
-}
-
 .heroImage {
     width: 100%;
     border-radius: 10px;
@@ -23,19 +18,22 @@
 
 .about {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    flex-wrap: wrap;
+    max-width: 1200px;
     width: 100%;
     gap: 20px;
     color: white;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .aboutImage {
-    max-width: 40%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
-    flex-shrink: 0;
 }
 
 .aboutText {
@@ -130,8 +128,15 @@
 }
 
 @media (max-width: 480px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
     .aboutImage {
         max-width: 90%;
+    }
+    .aboutText {
+        max-width: 100%;
     }
     .aboutText h2 {
         font-size: clamp(18px, 3vw, 28px);
