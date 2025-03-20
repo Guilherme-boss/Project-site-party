@@ -1,7 +1,5 @@
-/* ======= FOOTER (Rodape.module.css) ======= */
 .footer {
     width: 100%;
-    background-color: black;
     color: white;
     padding: 20px 40px;
     display: flex;
@@ -53,7 +51,6 @@
     margin-right: 5px;
 }
 
-/* ======= RESPONSIVIDADE ======= */
 @media (max-width: 1024px) {
     .footer {
         padding: 15px;

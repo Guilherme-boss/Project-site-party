@@ -1,4 +1,3 @@
-/* ======= SERVICES (Services.module.css) ======= */
 .container {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
     align-items: center;
 }
 
-/* ======= RESPONSIVIDADE ======= */
 @media (max-width: 1024px) {
     .container {
         padding: 30px;
