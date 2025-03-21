@@ -31,12 +31,12 @@ export default function Header() {
                         </li>
                         <li>
                             <NavLink to="/servicos" className={({ isActive }) => isActive ? styles.active : ""}>
-                                Services
+                                Serviços
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/contato" className={({ isActive }) => isActive ? styles.active : ""}>
-                                Contact
+                                Contato
                             </NavLink>
                         </li>
                     </ul>

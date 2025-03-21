@@ -34,7 +34,7 @@ export default function Services() {
                 text="A sua tranquilidade é a nossa prioridade! Contamos com uma equipe treinada para recepcionar seus convidados, servir com eficiência e acompanhar as crianças nos brinquedos, garantindo um evento organizado e seguro.
                 Nossa equipe é composta por gerente de festa, recepcionistas, monitores, equipe de cozinha, garçons para adultos e garçonetes para crianças com descartáveis, garantindo um atendimento impecável em cada detalhe.
                 Aqui, cada festa é conduzida com profissionalismo e dedicação para que você aproveite cada momento com total tranquilidade!"
-                image="/decoracao2.png"
+                image="/5.png"
                 reverse={true} 
             />
         </div>
