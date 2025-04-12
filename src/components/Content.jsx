@@ -1,4 +1,3 @@
-// src/components/Content.jsx
 import styles from '../styles/Content.module.css';
 import { FaWhatsapp, FaStar } from 'react-icons/fa';
 
@@ -26,7 +25,6 @@ export default function Content() {
       </div>
 
 
-      {/* QUEM SOMOS */}
       <div className={styles.about}>
         <h2>Quem Somos</h2>
         <p>
@@ -34,7 +32,6 @@ export default function Content() {
         </p>
       </div>
 
-      {/* DIFERENCIAIS */}
       <div className={styles.features}>
         <h3>Por que escolher a gente?</h3>
         <ul>
@@ -46,7 +43,6 @@ export default function Content() {
       </div>
 
 
-            {/* BLOCO DE VÍDEO */}
       <div className={styles.videoBlock}>
         <div className={styles.videoWrapper}>
           <video
