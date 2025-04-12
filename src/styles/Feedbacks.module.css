@@ -1,0 +1,35 @@
+.feedbackSection {
+    padding: 80px 20px;
+    background-color: #f5f5f0;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+    color: #333;
+    border-bottom: 2px solid rgb(187, 184, 163);
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .swiper {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .slideImage {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .slideImage:hover {
+    transform: scale(1.03);
+  }
+  
