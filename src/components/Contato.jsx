@@ -1,4 +1,3 @@
-// src/components/Contato.jsx
 import styles from "../styles/Contato.module.css";
 
 export default function Contato() {

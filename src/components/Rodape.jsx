@@ -1,4 +1,4 @@
-import styles from '../styles/rodape.module.css';
+import styles from '../styles/Rodape.module.css';
 import { FaInstagram, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 export default function Rodape() {
