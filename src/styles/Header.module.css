@@ -16,17 +16,36 @@
   flex-wrap: wrap;
 }
 
-.logoWrapper {
+.logoContainer {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 50px;
   width: auto;
-  height: 60px;
-  max-height: 70px;
-  max-width: 160px;
+  margin-right: 10px;
   object-fit: contain;
+}
+
+.logoText h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 700;
+  color: rgb(119, 119, 115); 
+  line-height: 1.2;
+}
+
+.logoText span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #121212;
   display: block;
 }
 

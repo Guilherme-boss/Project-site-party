@@ -6,11 +6,15 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         
-        <div className={styles.logoWrapper}>
-          <a href="#home">
-          <img alt="logo" className={styles.logo} src="/logosvg.svg" />
-          </a>
-        </div>
+      <div className={styles.logoContainer}>
+        <a href="#home" className={styles.logoLink}>
+          <img src="/logosvg.svg" alt="Logo Floquis" className={styles.logoImage} />
+          <div className={styles.logoText}>
+            <h1>Floquis</h1>
+            <span>Buffet Infantil</span>
+          </div>
+        </a>
+      </div>
 
         <a
           href="https://wa.me/556192625512"
