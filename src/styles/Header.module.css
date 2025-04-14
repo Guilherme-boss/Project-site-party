@@ -16,13 +16,20 @@
   flex-wrap: wrap;
 }
 
-.brand a {
-  color: gold;
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: 'Georgia', serif;
+.logoWrapper {
+  display: flex;
+  align-items: center;
 }
+
+.logo {
+  width: auto;
+  height: 60px;
+  max-height: 70px;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+}
+
 
 .whatsapp {
   background-color: #25D366;
@@ -46,6 +53,12 @@
 }
 
 @media (max-width: 768px) {
+
+  .logo {
+    height: 50px;
+    max-width: 120px;
+  }
+
   .container {
     flex-direction: column;
     gap: 15px;

@@ -6,9 +6,10 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         
-        <div className={styles.brand}>
-          <img></img>
-          <a href="#home"> Jannifer</a>
+        <div className={styles.logoWrapper}>
+          <a href="#home">
+          <img alt="logo" className={styles.logo} src="/logosvg.svg" />
+          </a>
         </div>
 
         <a

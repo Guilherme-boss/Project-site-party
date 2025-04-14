@@ -6,7 +6,7 @@ export default function Rodape() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.social}>
-          <a href="https://www.instagram.com/@floquisbuffetinfantil" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/floquisbuffetinfantil" target="_blank" rel="oonpener noreferrer">
             <FaInstagram className={styles.icon} /> Instagram
           </a>
           <a href="mailto:floquisbuffetinfantil@gmail.com">
@@ -26,7 +26,7 @@ export default function Rodape() {
               </a>
            </p>
 
-          <p>Atendimento: Seg-Sex, 9h às 18h</p>
+          <p>Atendimento: Ter a Sex 9h às 18h e Sáb 9h às 14h</p>
         </div>
       </div>
     </footer>

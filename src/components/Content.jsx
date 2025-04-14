@@ -24,7 +24,6 @@ export default function Content() {
         </div>
       </div>
 
-
       <div className={styles.about}>
         <h2>Quem Somos</h2>
         <p>
@@ -42,11 +41,10 @@ export default function Content() {
         </ul>
       </div>
 
-
       <div className={styles.videoBlock}>
         <div className={styles.videoWrapper}>
           <video
-            src="/videoDecoracao.mp4"
+            src="/VideoUrso.mp4"
             controls
             className={styles.video}
           />
@@ -71,10 +69,19 @@ export default function Content() {
           👉 Solicitar Orçamento pelo WhatsApp
         </a>
       </div>
+      <div className={styles.gallerySection}>
+      <h2>Nossas Decorações Temáticas</h2>
 
+        <div className={styles.galleryGrid}>
+          {Array.from({ length: 8 }, (_, i) => (
+            <div key={i} className={styles.galleryItem}>
+              <img src={`/${i + 1}img.jpg`} alt={`Espaço ${i + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
 
       <div className={styles.decorThemes}>
-        <h2>Nossas Decorações Temáticas</h2>
 
         <div className={styles.themeCard}>
           <img src="/aviao.jpg" alt="Tema Viagem e Avião" />
@@ -158,6 +165,7 @@ export default function Content() {
       </div>
       <h2 className={styles.videoSectionTitle}>Veja nossas decorações em vídeo</h2>
 
+
         <div className={styles.videoBlockSet}>
           <div className={styles.videoWrapperSet}>
             <video src="/1.mp4" controls className={styles.videoSet} />
@@ -187,8 +195,6 @@ export default function Content() {
             <p>Uma explosão de blocos, aventura e criatividade! Com elementos pixelados, personagens e vegetação do mundo do Minecraft, essa decoração faz qualquer fã do jogo se sentir dentro da própria partida. Ideal para aniversariantes que amam construir, explorar e brincar!</p>
           </div>
         </div>
-
-              
     </section>
   );
 }
